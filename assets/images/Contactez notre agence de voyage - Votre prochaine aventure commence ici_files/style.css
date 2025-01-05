@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(186, 15%, 59%);
+  font-size: 16px;
+  color: #454545;
+  background-image: url(https://img.freepik.com/photos-gratuite/paysage-tropical-vacances-palme-ete_1203-5352.jpg?t=st=1735430622~exp=1735434222~hmac=92eb683f45882793550974b79c3bee8c862708fb8a53562851b3d6cc4dee5dbf&w=1800);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header__wrapper {
+  background-color: #fbfbfb;
+
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.nav {
+  height: 100%;
+}
+
+.nav__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__lists-icone-fr {
+  width: 25px;
+  position: relative;
+  bottom: 2px;
+}
+
+.nav__lists-item {
+  font-size: 20px;
+  color: #3f3f3f;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav__lists-item:hover {
+  color: #0c6da4;
+}
+.nav__lists-item:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.fa-solid,
+.fas {
+  font-size: 18px;
+  padding-right: 8px;
+}
+.main {
+  background-color: #fbfbfb;
+  margin: 160px auto 120px auto;
+  padding: 32px;
+  border-radius: 15px;
+  width: 600px;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0c6da4;
+}
+
+label {
+  display: block;
+  color: #212121;
+  padding: 8px 0;
+}
+
+label:has(+ input[required])::after {
+  content: " *";
+  color: #e22853;
+}
+
+input {
+  border-radius: 4px;
+  height: 40px;
+}
+
+.section__name-input--borderColor,
+.section__email-input--borderColor,
+.section__queryType--borderColor,
+.section__queries--borderColor {
+  border: 1px solid #c1c1c1;
+}
+
+.section__name-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.section__email {
+  flex: 0 0 100%;
+}
+
+.section__queries-wrapper,
+.section__message {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*section nom prénom */
+.section__name {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.section__name-input,
+.section__email input {
+  width: 100%; /* Les champs prennent toute la largeur disponible */
+  padding: 0.5rem;
+
+  border-radius: 4px;
+}
+
+/* Styles de base pour <fieldset> */
+fieldset {
+  border: 1px solid #666666; /* Bordure grise légère */
+  padding: 16px; /* Espacement intérieur */
+  margin: 1em 0; /* Espacement extérieur */
+  border-radius: 4px; /* Coins légèrement arrondis */
+}
+
+/* Styles de base pour <legend> */
+legend {
+  color: #0c6da4;
+  font-weight: bold; /* Texte en gras */
+  font-size: 1em; /* Taille du texte */
+  padding: 0 0.5em; /* Espacement horizontal */
+  margin-bottom: 1rem; /* Espacement sous le texte */
+}
+
+/*section queries*/
+.section__queries {
+  margin-top: 20px;
+}
+.section__queries-wrapper {
+  display: flex;
+}
+.section__queryType {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 8px;
+  width: 242px;
+  height: 40px;
+  padding: 12px 0;
+}
+
+.section__queryType:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section__queryType input[type="radio"] {
+  margin: 0 8px;
+}
+
+/*section message*/
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+/*section aggreement*/
+.section__agreement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*section button*/
+
+input[type="submit"] {
+  width: 100%;
+  height: 48px;
+  background-color: #0c6da4;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #094e75;
+  transform: scale(1.1);
+}
+
+.section__agreement label {
+  padding-left: 8px;
+}
+
+.footer__wrapper {
+  background-color: #fbfbfb;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer__column {
+  flex: 1;
+  min-width: 240px;
+  max-width: 300px;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #3f3f3f;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+.footer__item:hover {
+  background-color: #0c6da4;
+  color: #fbfbfb;
+  border-radius: 4px;
+  padding-left: 8px;
+
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  border: 3px solid red;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: rotate(50deg);
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez notre agence de voyage pour toute information sur vos futures escapades. Nous sommes à votre disposition pour répondre à vos demandes générales ou de support. Remplissez le formulaire de contact et notre équipe vous répondra dans les plus brefs délais.">
+    <link href="./Contactez notre agence de voyage - Votre prochaine aventure commence ici_files/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Contactez notre agence de voyage - Votre prochaine aventure commence ici_files/style-reset.css">
+    <link rel="stylesheet" href="./Contactez notre agence de voyage - Votre prochaine aventure commence ici_files/style.css">
+    <title>
+      Contactez notre agence de voyage - Votre prochaine aventure commence ici
+    </title>
+  <link rel="stylesheet" type="text/css" href="chrome-extension://gdnpkbipbholkoaggmlblpbmgemddbgb/css/awebChromeHelperInjected.min.css"></head>
+
+  <body cz-shortcut-listen="true">
+    <header class="header__wrapper">
+      <nav class="nav">
+        <ul class="nav__lists">
+          <li class="nav__lists-item">
+            <img src="./Contactez notre agence de voyage - Votre prochaine aventure commence ici_files/icon-france.png" width="10px" class="nav__lists-icone-fr" alt="accéder au voyage en france">En France
+          </li>
+          <li class="nav__lists-item">
+            <i class="fa-solid fa-earth-americas" aria-label="voyage à l&#39;étranger"></i>A l'étranger
+          </li>
+
+          <li class="nav__lists-item">
+            <i class="fa-solid fa-gift" aria-hidden="true"></i>Bons plans
+          </li>
+
+          <li class="nav__lists-item">
+            <i class="fa-solid fa-ship" aria-label="Croisière"></i>Croisière
+          </li>
+          <li class="nav__lists-item">
+            <i class="fa-solid fa-envelope" aria-label="contact"></i>Contact
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Contactez-nous</h1>
+
+      <form action="http://127.0.0.1:5500/index.html#" method="get" id="form">
+        <fieldset class="section__name">
+          <legend><h2>Vos informations</h2></legend>
+
+          <div class="section__name-wrapper">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="section__name-input section__name-input--borderColor" name="firstName" id="firstName" required="">
+          </div>
+          <div class="section__name-wrapper">
+            <label for="lastName">Nom</label>
+            <input type="text" class="section__name-input section__name-input--borderColor" name="lastName" id="lastName" required="">
+          </div>
+
+          <!--Email section-->
+          <div class="section__email">
+            <label for="email">Adresse mail</label>
+            <input type="email" name="email" id="email" required="" class="section__email-input section__email-input--borderColor">
+          </div>
+          <div class="section__numero">
+            <label for="telfixe">Numéro de téléphone fixe</label>
+
+            <input type="tel" name="telfixe" id="telfixe" placeholder="00 00 00 00 00 00">
+            <label for="telportable">Numéro de téléphone fixe</label>
+
+            <input type="tel" name="telportable" id="telportable" placeholder="00 00 00 00 00 00">
+          </div>
+        </fieldset>
+
+        <!--query type section-->
+        <fieldset class="section__queries">
+          <legend><h2>Votre demande</h2></legend>
+          <div class="section__queries-wrapper">
+            <div class="section__queryType section__queryType--borderColor">
+              <input type="radio" name="queryType" value="reservation" class="input__border--color" id="maReservation" checked="" aria-describedby="ReservationDesc">
+              <label for="maReservation"> Ma réservation</label>
+              <span id="ReservationDesc" class="sr-only">Cochez cette option si vous avez une réservation.</span>
+            </div>
+
+            <div class="section__queryType section__queryType--borderColor">
+              <input type="radio" name="queryType" id="demandeGeneral" value="demandeGeneral" aria-describedby="demandeGen">
+              <label for="demandeGeneral"> Demande générale</label>
+              <span id="demandeGen" class="sr-only">Cochez cette option si vous n'avez pas de réservation.</span>
+            </div>
+          </div>
+
+          <!--message section-->
+
+          <label for="message"> Message</label>
+          <textarea id="message" required="" rows="6" class="section__queries--borderColor"></textarea>
+        </fieldset>
+
+        <div class="section__agreement">
+          <input type="checkbox" name="agreement" id="agreement" value="true" required="">
+          <label for="agreement">
+            Je consens à être contacté(e) par l'équipe
+          </label>
+        </div>
+
+        <input type="submit" value="Envoyer le message">
+      </form>
+    </main>
+
+    <footer class="footer__wrapper">
+      <div class="footer__column">
+        <h2 class="footer__title">Destinations</h2>
+        <ul class="footer__list">
+          <li class="footer__item">En France</li>
+          <li class="footer__item">A l'étranger</li>
+          <li class="footer__item">Croisières</li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Informations</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">Qui sommes-nous ?</li>
+          <li class="footer__item">Conditions générales de vente</li>
+          <li class="footer__item">Politique d'utilisation</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Compte</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">Mon compte</li>
+          <li class="footer__item">Mes réservations</li>
+          <li class="footer__item">libellé</li>
+        </ul>
+      </div>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div id="awebChromeHelper" data-version="1.23.6"><template shadowrootmode="open"><link rel="stylesheet" type="text/css" href="chrome-extension://gdnpkbipbholkoaggmlblpbmgemddbgb/css/awebChromeHelper.min.css"><div id="awebShadowBody"></div></template></div></body></html>

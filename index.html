@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactez notre agence de voyage pour toute information sur vos futures escapades. Nous sommes à votre disposition pour répondre à vos demandes générales ou de support. Remplissez le formulaire de contact et notre équipe vous répondra dans les plus brefs délais."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style-reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Réservation</title>
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__lists">
+          <li class="nav__item">
+            <img
+              src="./assets/images/icon-france.png"
+              class="nav__icon"
+              alt=""
+            />En France
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>A
+            l'étranger
+          </li>
+
+          <li class="nav__item">
+            <i class="fa-solid fa-gift" aria-hidden="true"></i>Bons plans
+          </li>
+
+          <li class="nav__item">
+            <i class="fa-solid fa-ship" aria-hidden="true"></i>Croisière
+          </li>
+          <li class="nav__item nav__item--active">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>Réservation
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="summary">
+      <div class="summary__ticket summary__ticket--left">
+        <div class="summary__title">
+          <img src="./assets/images/summary-logo.png" />
+          <p class="summary__title-text">Résumé de <br />votre voyage</p>
+        </div>
+        <div class="summary__info summary__info--departure">
+          <div class="summary__info-containerDeparture">
+            <div class="summary__flight-info summary__flight-info--departure">
+              <p class="summary__subtitle">Aller</p>
+              <img src="./assets/images/british-airwaysLogo.png" width="95px" />
+              <p>01/07/2025</p>
+            </div>
+            <hr />
+            <div class="summary__hour summary__hour--departure">
+              <p class="summary__text--bold">10H40</p>
+              <p class="summary__text--bold">1 ESCALE</p>
+              <p class="summary__text--bold">
+                08H55<span class="summary__decalage">+1J</span>
+              </p>
+            </div>
+            <div class="summary__arrow">
+              <span class="summary__airport">CDG</span>
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ><span class="summary__airport">MLE</span>
+            </div>
+            <div class="summary__escale">
+              <p class="summary__text--bold">19h15</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary__info summary__info--back">
+          <div class="summary__info-containerBack">
+            <div class="summary__flight-info summary__flight-info--back">
+              <p class="summary__subtitle">Retour</p>
+              <img src="./assets/images/iberia.png" width="80px" />
+              <p>31/07/2025</p>
+            </div>
+            <hr />
+            <div class="summary__hour summary__hour--back">
+              <p class="summary__text--bold">19h45</p>
+              <p class="summary__text--bold">1 ESCALE</p>
+
+              <p class="summary__text--bold">
+                14H25<span class="summary__decalage">+1J</span>
+              </p>
+            </div>
+            <div class="summary__arrow">
+              <span class="summary__airport">MLE</span>
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ><span class="summary__airport">CDG</span>
+            </div>
+            <div class="summary__escale">
+              <p class="summary__text--bold">21h40</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary__ticket summary__ticket--right d-flex">
+        <div class="summary__info-traveler">
+          <div class="summary__traveler-number">
+            <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+            <p>1 voyageur</p>
+          </div>
+          <div class="summary__traveler-luggage">
+            <img src="./assets/images/backbag.png" width="26px" />
+
+            <img
+              src="./assets/images/luggage.png"
+              class="summary__bagage-soute"
+              width="28px"
+            />
+          </div>
+          <div class="summary__price">
+            <p>Total : <span class="summary__price--big">982</span>,63 €</p>
+          </div>
+        </div>
+
+        <div class="summary__change-info">
+          <div class="summary__change">
+            <p class="summary__change-btn">Modifier</p>
+          </div>
+          <div class="summary__details">
+            <p class="summary__details-trip">
+              Détails
+              <i
+                class="fa-solid fa-angle-down"
+                aria-label="détails de la réservation"
+              ></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="summary__share">
+          <i
+            class="fa-solid fa-share-nodes"
+            aria-label="partager le résumé de la réservation"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!--Main-->
+    <main class="main">
+      <!--steps-->
+      <div class="steps">
+        <div class="steps__step steps__step--one">
+          Etape 1<br />
+          <p class="steps__info">Votre identité</p>
+        </div>
+        <div class="steps__step steps__step--two">
+          Etape 2
+          <br />
+          <p class="steps__info">Vos informations de contact</p>
+        </div>
+        <div class="steps__step steps__step--three">
+          Etape 3
+          <br />
+          <p class="steps__info">Moyens de paiement</p>
+        </div>
+      </div>
+      <br />
+
+      <!--form-->
+
+      <form action="#" method="get" id="form">
+        <!--Identité-->
+        <fieldset class="form__section form__section--identity">
+          <legend class="form__legend">
+            <h2 class="form__title">Votre identité</h2>
+          </legend>
+          <p class="form__required-info">Champs obligatoires</p>
+          <h3 class="form__subtitle">Civilité</h3>
+          <div class="form__gender">
+            <div class="form__gender-option form__gender-option--woman">
+              <input
+                type="radio"
+                name="gender"
+                id="madame"
+                value="Woman"
+                class="form__input form__input--radio"
+              />
+              <label for="madame" class="form__label">Madame</label>
+            </div>
+            <div class="form__gender-option form__gender-option--man">
+              <input
+                type="radio"
+                name="gender"
+                id="monsieur"
+                value="man"
+                class="form__input form__input--radio"
+              />
+              <label for="monsieur" class="form__label">Monsieur</label>
+            </div>
+          </div>
+
+          <div class="form__field form__field--firstName">
+            <label for="firstName" class="form__label">Prénom</label>
+            <input
+              type="text"
+              class="form__input form__input--first-name form__input--border-color"
+              name="firstName"
+              id="firstName"
+              required
+            />
+          </div>
+
+          <div class="form__field form__field--last-name">
+            <label for="lastName" class="form__label">Nom</label>
+            <input
+              type="text"
+              class="form__input form__input--last-name form__input--border-color"
+              name="lastName"
+              id="lastName"
+              required
+            />
+          </div>
+
+          <!--section naissance-->
+          <div class="form__birth-section">
+            <!--sesction date de naissance-->
+            <div class="form__birth-date">
+              <label for="date" class="form__label">Date de naissance</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="JJ/MM/AAAA"
+                class="form__input form__input--birth-date form__input--border-color form__input--w100"
+              />
+              <br />
+              <small class="form__small-text">JJ/MM/AAAA</small>
+            </div>
+
+            <!--section pays de naissance-->
+            <div class="form__birth-country">
+              <label for="birth-country" class="form__label"
+                >Pays de naissance</label
+              >
+              <input
+                type="text"
+                list="birth-countries"
+                name="birth-country"
+                id="birth-country"
+                autocomplete="off"
+                class="form__input form__input--birth-country form__input--border-color form__input--w100"
+              />
+              <datalist id="birth-countries">
+                <option value="Allemagne"></option>
+                <option value="Espagne"></option>
+                <option value="Albanie"></option>
+                <option value="France"></option>
+                <option value="Etats-Unis"></option>
+                <option value="Canada"></option>
+              </datalist>
+            </div>
+          </div>
+
+          <!-- <div class="password__wrapper">
+            <div class="password__container password__choice">
+              <label for="password"> Créez votre mot de passe</label>
+              <input
+                type="password"
+                class="password__input password__input--borderColor"
+                name="password"
+                id="password"
+              />
+            </div>
+
+            <div class="password__container password__confirmation">
+              <label for="password-confirmation">
+                Confirmer votre mot de passe</label
+              >
+              <input
+                type="password"
+                class="password__input password__input--borderColor"
+                name="password-confirmation"
+                id="password-confirmation"
+              />
+            </div>
+          </div> -->
+        </fieldset>
+
+        <!--Vos information de contact-->
+        <fieldset class="form__section form__section--info">
+          <legend class="form__legend">
+            <h2 class="form__subtitle">Vos informations de contact</h2>
+          </legend>
+
+          <!--Email section-->
+          <div class="form__email">
+            <label for="email" class="form__label">Adresse mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="form__input form__input--email form__input--border-color"
+            />
+          </div>
+          <!--phone number section-->
+          <div class="form__phone">
+            <div class="form__phone-number form__phone-number--fixed">
+              <label for="telfixe" class="form__label"
+                >Numéro de téléphone fixe</label
+              >
+
+              <input
+                type="tel"
+                name="telfixe"
+                id="telfixe"
+                placeholder="00 00 00 00 00 00"
+                class="form__input form__input--phone-fixe form__input--border-color"
+              />
+            </div>
+            <div class="form__phone-number form__phone-number--mobile">
+              <label for="telportable" class="form__label"
+                >Numéro de téléphone portable</label
+              >
+
+              <input
+                type="tel"
+                name="telportable"
+                id="telportable"
+                placeholder="00 00 00 00 00 00"
+                class="form__input form__input--phone-portable form__input--border-color"
+              />
+            </div>
+          </div>
+
+          <!--section adresse postale-->
+          <div class="form__address">
+            <label for="address" class="form__label">Adresse</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              required
+              class="form__input form__input--address form__input--border-color"
+            />
+
+            <div class="form__city">
+              <div class="form__city-section form__city-section--zip-code">
+                <label for="zip-code" class="form__label">Code postal</label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  class="form__input form__input--zipCode form__input--border-color"
+                />
+              </div>
+              <div class="form__city-section form__city-section--city">
+                <label for="city" class="form__label">Ville</label>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="form__input form__input--city form__input--border-color"
+                />
+              </div>
+            </div>
+            <label for="country" class="form__label"> Pays</label>
+            <input
+              type="text"
+              list="countries"
+              name="country"
+              id="country"
+              autocomplete="off"
+              required
+              class="form__input form__input--country form__input--border-color"
+            />
+            <datalist id="countries">
+              <option value="Allemagne"></option>
+              <option value="Espange"></option>
+              <option value="Albanie"></option>
+              <option value="France"></option>
+              <option value="Etats-Unis"></option>
+              <option value="Canada"></option>
+            </datalist>
+          </div>
+        </fieldset>
+
+        <!--section paiement-->
+        <fieldset class="form__section form__section--payment">
+          <legend class="form__legend">Moyen de paiement</legend>
+          <div class="form__payment-methods">
+            <div class="form__payment-method form__payment-method--cb">
+              <input
+                type="radio"
+                name="payment-method"
+                id="cb"
+                class="form__input form__input--payment-method form__input--payment-method-cb"
+              />
+
+              <label for="cb" class="form__label">CB</label>
+            </div>
+            <div class="form__payment-method form__payment-method--visa">
+              <input
+                type="radio"
+                name="payment-method"
+                id="visa"
+                class="form__input form__input--payment-method form__input--payment-method-visa"
+              />
+
+              <label for="visa" class="form__label">VISA</label>
+            </div>
+            <div class="form__payment-method form__payment-method--mastercard">
+              <input
+                type="radio"
+                name="payment-method"
+                id="masterCard"
+                class="form__input form__input--payment-method form__input--payment-method-mastercard"
+              />
+              <label for="masterCard" class="form__label">MASTERCARD</label>
+            </div>
+          </div>
+
+          <div class="form__section form__section--card-info">
+            <label for="titulaire-card" class="form__label"
+              >Titulaire de la carte</label
+            >
+            <input
+              type="text"
+              name="owner-card"
+              id="owner-card"
+              class="form__input form__input--owner-card form__input--border-color"
+            />
+            <label for="card-number" class="form__label"
+              >Numéro de carte bleue</label
+            >
+            <input
+              type="text"
+              name="card-number"
+              id="card-number"
+              class="form__input form__input--card-number form__input--border-color"
+            />
+          </div>
+          <div class="form__section form__expiration-date">
+            <div class="form__expiration-month">
+              <label for="expiration-month" class="form__label"
+                >Mois expiration</label
+              >
+              <input
+                type="month"
+                name="expiration-month"
+                id="expiration-month"
+                class="form__input form__input--expiration-month form__input--border-color"
+              />
+            </div>
+            <div class="form__expiration-year">
+              <label for="expiration-year" class="form__label"
+                >Année expiration
+              </label>
+              <input
+                type="number"
+                name="expiration-year"
+                id="expiration-year"
+                placeholder="AAAA"
+                class="form__input form__input--expiration-year form__input--border-color"
+              />
+            </div>
+            <div class="form__ccv-number">
+              <label for="ccv" class="form__label">
+                Code sécurité
+                <i
+                  class="fa-solid fa-circle-info"
+                  aria-label="code sécurité de la carte bleue"
+                ></i
+              ></label>
+              <input
+                type="text"
+                name="ccv "
+                id="ccv"
+                class="form__input form__input--ccv form__input--border-color"
+                placeholder="123"
+              />
+            </div>
+          </div>
+          <div class="section__agreement">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              value="true"
+              required
+            />
+            <label for="agreement">
+              Je consens à être contacté(e) par l'équipe
+            </label>
+          </div>
+        </fieldset>
+
+        <!--Section envoi du formulaire-->
+        <input type="submit" value="Réserver" />
+        <!--<small
+          >Le récapitulatif de votre réservation sera affiché dans la fenêtre
+          suivante et une confirmation de réservation vous sera demandée</small
+        >
+      </form>
+      <br />
+      <p>
+        La suite ? Une fois votre réservation payée et confirmée, vérifiez votre
+        boite mail : vous y retrouverez votre e-mail de confirmation reprenant
+        l'ensemble des informations nécessaires à la préparation de votre
+        voyage.
+      </p>-->
+    </main>
+
+    <!--Footer-->
+    <footer class="footer__wrapper">
+      <div class="footer__column">
+        <h2 class="footer__title">Destinations</h2>
+        <ul class="footer__list">
+          <li class="footer__item">En France</li>
+          <li class="footer__item">A l'étranger</li>
+          <li class="footer__item">Croisières</li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Informations</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">Qui sommes-nous ?</li>
+          <li class="footer__item">Conditions générales de vente</li>
+          <li class="footer__item">Politique d'utilisation</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Compte</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">Mon compte</li>
+          <li class="footer__item">Mes réservations</li>
+          <li class="footer__item">libellé</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

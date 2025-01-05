@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(186, 15%, 59%);
+  font-size: 16px;
+  color: #454545;
+  background-image: url(https://img.freepik.com/photos-gratuite/paysage-tropical-vacances-palme-ete_1203-5352.jpg?t=st=1735430622~exp=1735434222~hmac=92eb683f45882793550974b79c3bee8c862708fb8a53562851b3d6cc4dee5dbf&w=1800);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*utilitaires*/
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/*header*/
+.header {
+  background-color: #fbfbfb;
+
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.nav {
+  height: 100%;
+}
+
+.nav__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__icon {
+  width: 22px;
+  position: relative;
+
+  bottom: -4px;
+  filter: contrast(0.5);
+  margin-right: 5px;
+}
+
+.nav__item {
+  color: #3f3f3f;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav__item:hover {
+  color: #0c6da4;
+}
+.nav__item:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.fa-solid,
+.fas {
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+/*Steps*/
+.steps {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background-color: #e7e7e7;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.steps__step {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+}
+
+.steps__step:hover {
+  background-color: #0c6da4;
+  color: #e7e7e7;
+  transform: scale(1.1);
+}
+
+.steps__info {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/*main */
+.main {
+  background-color: #fbfbfb;
+  margin: 160px auto 120px auto;
+  padding: 32px;
+  border-radius: 15px;
+  width: 600px;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0c6da4;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 7rem;
+  background-color: white;
+  padding: 20px;
+  font-size: 1rem;
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
+
+.summary__ticket {
+  border-radius: 10px;
+}
+
+.summary__ticket--left {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 30px;
+}
+
+.summary__ticket--right,
+.summary__ticket--left {
+  border: 1px dashed #0c6da4;
+  padding: 10px;
+}
+
+.summary__ticket--right {
+  justify-content: space-between;
+  gap: 16px;
+  width: 21rem;
+  position: relative;
+}
+
+.summary__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary__title-text {
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary__title img {
+  width: 30%;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.summary__flight-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  color: #333;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  align-items: center;
+  justify-items: center;
+  padding: 0 10px;
+  height: 28px;
+}
+
+.summary__hour {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.summary__decalage {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  bottom: 4px;
+  left: 4px;
+}
+
+.summary__subtitle {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.summary__text--bold {
+  font-weight: bold;
+}
+.summary__arrow {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.summary__escale {
+  display: flex;
+  justify-content: center;
+}
+
+.summary__info-traveler {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.summary__traveler-luggage {
+  justify-content: flex-start;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.summary__traveler-number {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.summary__bagage-soute {
+  filter: opacity(0.5);
+}
+.summary__price {
+  font-weight: bold;
+}
+.summary__price--big {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #222;
+}
+
+.summary__change-btn {
+  background-color: #0c6da4;
+  padding: 10px 22px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  color: white;
+}
+.summary__change-btn::after {
+  content: ">";
+  padding-left: 8px;
+}
+.summary__change-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary__details {
+  display: flex;
+  align-self: end;
+}
+
+.summary__details .fa-angle-down:before {
+  content: "\f107";
+  font-size: 0.8rem;
+  color: #0c6da4;
+}
+.summary__details-trip {
+  color: #0c6da4;
+  font-size: 0.9rem;
+}
+
+.summary__share {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 20.8rem;
+  border-radius: 0 8px 8px 0;
+  background-color: #0e6da5;
+  color: white;
+}
+
+/*form*/
+label {
+  display: block;
+  color: #212121;
+  padding: 8px 0;
+}
+
+label[required]::after,
+.form__required-info::before {
+  content: " *";
+  color: #e22853;
+}
+
+input {
+  border-radius: 4px;
+  height: 40px;
+}
+.form__input--border-color {
+  border: 1px solid #c1c1c1;
+}
+
+.form__required-info {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  bottom: 20px;
+}
+
+/*identité*/
+
+.form__gender {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.form__gender-option {
+  display: flex;
+  align-items: center;
+}
+
+.form__section--identity {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+/* Styles de base pour <fieldset> */
+fieldset {
+  border: 1px solid #666666; /* Bordure grise légère */
+  padding: 16px; /* Espacement intérieur */
+  margin: 1em 0; /* Espacement extérieur */
+  border-radius: 4px; /* Coins légèrement arrondis */
+}
+
+/* Styles de base pour <legend> */
+legend {
+  color: #0c6da4;
+  font-weight: bold; /* Texte en gras */
+  font-size: 1em; /* Taille du texte */
+  padding: 0 0.5em; /* Espacement horizontal */
+  margin-bottom: 1rem; /* Espacement sous le texte */
+}
+
+.form__birth-section,
+.form__phone,
+.form__city,
+.expirationDate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+.form__birth-date,
+.form__input--owner-card,
+.form__input--card-number {
+  width: 100%;
+}
+
+/* informations de contact*/
+
+.form__input--email,
+.form__input--address {
+  width: 100%;
+}
+.form__phone {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form__phone-number--fixed,
+.form__phone-number--mobile,
+.form__input--zipCode,
+.form__input--city,
+.form__input--country {
+  width: 100%;
+}
+
+.form__input--phone-fixe,
+.form__input--phone-portable {
+  width: 100%;
+  padding: 10px;
+}
+
+.form__payment-methods {
+  margin-bottom: 20px;
+}
+
+.form__expiration-date,
+.form__payment-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.form__payment-method {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form__ccv-number {
+  margin-left: 25px;
+}
+
+/* 
+.password__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+} */
+
+/* .password__input {
+  width: 100%;
+} */
+
+/*section aggreement*/
+.section__agreement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section__agreement label {
+  padding-left: 8px;
+}
+/*section button*/
+
+input[type="submit"] {
+  width: 100%;
+  height: 48px;
+  background-color: #0c6da4;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #094e75;
+}
+
+/*footer*/
+
+.footer__wrapper {
+  background-color: #fbfbfb;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer__column {
+  flex: 1;
+  min-width: 240px;
+  max-width: 300px;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #3f3f3f;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+.footer__item:hover {
+  background-color: #0c6da4;
+  color: #fbfbfb;
+  border-radius: 4px;
+  padding-left: 8px;
+
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
