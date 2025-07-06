@@ -18,3 +18,5 @@ Le projet se divise en deux étapes :
 - CSS3
 - JavaScript (à venir)
 - React JS (à venir)
+
+Page visible via le lien suivant : http://edensahile.github.io/formulaire/
