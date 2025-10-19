@@ -20,5 +20,6 @@ Le projet se divise en deux étapes :
 - React JS (à venir)
 
 Lien vers la page : http://edensahile.github.io/formulaire/
+<br>
 *💡 Astuce : Faites clic droit > "Ouvrir dans un nouvel onglet" pour garder mon profil ouvert*
 
